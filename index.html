@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <title>SJL</title>
+  </head>
+  <body>
+    <header
+      class="container d-flex flex-row align-items-center justify-content-between py-xl-5 py-lg-4 py-1 px-0"
+    >
+      <a href="/" class="">
+        <img src="./assets/logo.png" alt="logo" class="logo" />
+      </a>
+      <button class="d-flex d-lg-none" type="button" id="open-button">
+        <img src="./assets/menu.svg" alt="menu" style="height: 26px" />
+      </button>
+      <div class="bg-menu d-flex d-lg-none" id="menu">
+        <nav
+          class="container mt-1 h-100 justify-content-between flex-column d-flex flex-column align-items-center gap-1 gap-xl-5 py-4"
+        >
+          <div class="d-flex justify-content-end w-100">
+            <button type="button" id="close-button">
+              <img
+                src="./assets/menu-close.svg"
+                alt="close-menu"
+                style="height: 26px"
+              />
+            </button>
+          </div>
+          <ul
+            class="nav d-flex flex-column align-items-center gap-4 mt-4 fs-5 fw-bold"
+          >
+            <li
+              class="nav-item d-flex flex-row-reverse gap-2 align-items-center active-link"
+            >
+              <a href="/about.html" class="">A proposito</a>
+              <span></span>
+            </li>
+            <li class="nav-item"><a href="#" class="">Transportación</a></li>
+            <li class="nav-item">
+              <a href="/prices.html" class="">Logística</a>
+            </li>
+
+            <li class="nav-item"><a href="#" class="">Carreras</a></li>
+            <li class="nav-item"><a href="#" class="">sala de noticias</a></li>
+          </ul>
+          <div class="d-flex gap-3 mt-4 svg-filter-green">
+            <a href="#">
+              <img
+                src="./assets/instagram.svg"
+                alt="instagram"
+                style="height: 32px"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/facebook.svg"
+                alt="facebbok"
+                style="height: 32px"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/linkedin-svgrepo-com.svg"
+                alt="tiktok"
+                style="height: 32px"
+              />
+            </a>
+          </div>
+          <div class="d-flex gap-4">
+            <a href="#">
+              <img
+                src="./assets/france.svg"
+                alt="france"
+                style="height: 40px"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/united-kingdom-uk.svg"
+                alt="uk"
+                style="height: 40px"
+              />
+            </a>
+          </div>
+          <div class="text-center text-red">
+            <span class="fs-7">© 2022 Reservados todos los derechos</span>
+          </div>
+        </nav>
+      </div>
+      <nav
+        class="d-lg-flex d-none flex-row align-items-center justify-content-between gap-1 gap-xl-5"
+      >
+        <ul class="nav nav-pills gap-1 gap-lg-1 gap-xl-3 gap-xxl-5">
+          <li
+            class="nav-item active-link d-flex flex-column align-items-center dropdown"
+          >
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >A proposito</a
+            >
+            <span></span>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"> Sobre nosotros VF </a>
+              <a class="dropdown-item" href="#">
+                Historia y aspectos destacados</a
+              >
+              <a class="dropdown-item" href="#"> Nuestros valores</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex flex-column align-items-center dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >A proposito</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"> Transport FTL </a>
+              <a class="dropdown-item" href="#"> Soluciones de Grupaje</a>
+              <a class="dropdown-item" href="#"> Transporte excepcional</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex flex-column align-items-center dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Logística</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"> Soluciones logisticas </a>
+              <a class="dropdown-item" href="#"> Centros logisticos</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex flex-column align-items-center dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Carreras</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"> Únete a SJL </a>
+              <a class="dropdown-item" href="#"> NUESTRAS OFERTAS DE TRABAJO</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex flex-column align-items-center dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Sala de noticias</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#"> Noticias </a>
+              <a class="dropdown-item" href="#"> Recursos</a>
+              <a class="dropdown-item" href="#"> Espacio Clienté</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-lg-flex d-none gap-1 gap-xl-2 gap-xxl-5 align-items-center">
+        <div class="d-flex gap-2">
+          <a href="#">
+            <img src="./assets/france.svg" alt="france" style="height: 30px" />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/united-kingdom-uk.svg"
+              alt="spain"
+              style="height: 30px"
+            />
+          </a>
+        </div>
+        <div class="d-flex gap-2 svg-filter-green">
+          <a href="#">
+            <img
+              src="./assets/instagram.svg"
+              alt="instagram"
+              style="height: 24px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/facebook.svg"
+              alt="facebbok"
+              style="height: 24px"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./assets/linkedin-svgrepo-com.svg"
+              alt="tiktok"
+              style="height: 24px"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="my-3 my-lg-0">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide text-white">
+              <img
+                class="bg-center container mx-3"
+                src="./assets/cargo-port.webp"
+                alt="image"
+              />
+              <div class="swiper-info-container w-50 w-lg-55">
+                <div class="bg-red swiper-info d-flex gap-4">
+                  <div
+                    class="swiper-info-line bg-white d-none d-lg-block"
+                  ></div>
+                  <div class="swiper-info-text">
+                    <h1>
+                      Transporte, logística, tránsito
+                      <span>entre Europa y África </span>
+                    </h1>
+                    <p class="opacity-75">
+                      Socio logístico y creador de soluciones integradas para
+                      optimizar el abastecimiento de su hcain
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-info-btn">
+                <a href="#" class="btn btn-primary">pide una cotización </a>
+              </div>
+            </div>
+            <div class="swiper-slide text-white">
+              <img
+                class="bg-center container mx-3"
+                src="./assets/sjl-warehouse.jpg"
+                alt="image"
+              />
+              <div class="swiper-info-container w-50 w-lg-55">
+                <div class="bg-red swiper-info d-flex gap-4">
+                  <div
+                    class="swiper-info-line bg-white d-none d-lg-block"
+                  ></div>
+                  <div class="swiper-info-text">
+                    <h1>
+                      Transporte, logística, tránsito
+                      <span>entre Europa y África </span>
+                    </h1>
+                    <p class="opacity-75">
+                      Socio logístico y creador de soluciones integradas para
+                      optimizar el abastecimiento de su hcain
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-info-btn">
+                <a href="#" class="btn btn-primary">pide una cotización </a>
+              </div>
+            </div>
+            <div class="swiper-slide text-white">
+              <img
+                class="bg-center container mx-3"
+                src="./assets/sjl-truck.jpg"
+                alt="image"
+              />
+              <div class="swiper-info-container w-50 w-lg-55">
+                <div class="bg-red swiper-info d-flex gap-4">
+                  <div
+                    class="swiper-info-line bg-white d-none d-lg-block"
+                  ></div>
+                  <div class="swiper-info-text">
+                    <h1>
+                      Transporte, logística, tránsito
+                      <span>entre Europa y África </span>
+                    </h1>
+                    <p class="opacity-75">
+                      Socio logístico y creador de soluciones integradas para
+                      optimizar el abastecimiento de su hcain
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-info-btn">
+                <a href="#" class="btn btn-primary">pide una cotización </a>
+              </div>
+            </div>
+            <div class="swiper-slide text-white">
+              <img
+                class="bg-center container mx-3"
+                src="./assets/cargo-port.webp"
+                alt="image"
+              />
+              <div class="swiper-info-container w-50 w-lg-55">
+                <div class="bg-red swiper-info d-flex gap-4">
+                  <div
+                    class="swiper-info-line bg-white d-none d-lg-block"
+                  ></div>
+                  <div class="swiper-info-text">
+                    <h1>
+                      Transporte, logística, tránsito
+                      <span>entre Europa y África </span>
+                    </h1>
+                    <p class="opacity-75">
+                      Socio logístico y creador de soluciones integradas para
+                      optimizar el abastecimiento de su hcain
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-info-btn">
+                <a href="#" class="btn btn-primary">pide una cotización </a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="d-flex justify-content-center my-lg-3 me-lg-6 me-0">
+          <a href="#" class="btn btn-outline-primary">
+            Descubre nuestras soluciones
+          </a>
+        </div>
+      </section>
+      <section class="my-5 container">
+        <div
+          class="d-flex flex-lg-row flex-column justify-content-center align-items-center h-800 text-white"
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <div class="position-relative h-100 me-lg-3">
+              <img
+                src="./assets/semi-truck.png"
+                alt="truck"
+                class="bg-center"
+              />
+              <div
+                class="d-flex align-items-center justify-content-center gap-4 position-absolute bottom-0 end-0 start-0 bg-red rounded-4 py-lg-4 px-lg-5 px-2 pt-2"
+              >
+                <img
+                  src="./assets/fast-delivery-truck-van-svgrepo-com.svg"
+                  alt="image"
+                  class="svg-filter-white svg-size"
+                />
+                <div class="d-flex gap-lg-3 gap-2 flex-column">
+                  <h2 class="fs-3 fw-bolder text-uppercase">Transporte</h2>
+                  <p class="opacity-75 fs-7">
+                    Acercamos sus mercados con soluciones de transporte
+                    integradas y escalables que cubren la ruta comercial
+                    Europa-Marruecos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-primary my-3">Aprende más +</a>
+          </div>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center gap-2"
+          >
+            <div class="position-relative h-100 ms-lg-3">
+              <img src="./assets/cargoship.png" alt="truck" class="bg-center" />
+              <div
+                class="d-flex align-items-center justify-content-center gap-4 position-absolute bottom-0 end-0 start-0 bg-red rounded-4 py-lg-4 px-lg-5 px-2 pt-2"
+              >
+                <img
+                  src="./assets/container-crane-svgrepo-com.svg"
+                  alt="image"
+                  class="svg-filter-white svg-size"
+                />
+                <div class="d-flex gap-lg-3 gap-2 flex-column">
+                  <h2 class="fs-3 fw-bolder text-uppercase">Transporte</h2>
+                  <p class="opacity-75 fs-7">
+                    Acercamos sus mercados con soluciones de transporte
+                    integradas y escalables que cubren la ruta comercial
+                    Europa-Marruecos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-primary my-3">Aprende más +</a>
+          </div>
+        </div>
+      </section>
+      <section class="my-5 py-5 position-relative">
+        <div class="my-lg-5 py-5 bg-green h-600">
+          <div class="container d-flex flex-row-reverse">
+            <img
+              src="./assets/planet.webp"
+              alt="planet"
+              class="planet-position bg-center w-lg-40 w-75 h-lg-100 h-25"
+            />
+            <div
+              class="w-lg-50 mt-5 mt-lg-0 d-flex flex-column justify-content-center text-white ps-lg-5 ps-3 gap-lg-5 gap-4"
+            >
+              <div
+                class="d-flex flex-row align-items-center gap-4 mt-5 mt-lg-0"
+              >
+                <div
+                  class="swiper-info-line bg-white mb-2 d-none d-lg-block"
+                ></div>
+                <h1 class="fw-bolder fs-1 text-uppercase">
+                  conectando Europa y África
+                </h1>
+              </div>
+              <div class="opacity-75 fs-7">
+                <p>
+                  Líder en transporte internacional y logística en el corredor
+                  Europa-África con más de 24.000 cruces al año en el Estrecho
+                  de Gibraltar. SJL ayuda a sus clientes a optimizar su cadena
+                  de suministro.
+                </p>
+                <p>
+                  Ofrecemos soluciones integradas, personalizadas y multimodales
+                  para toda la cadena de transporte y logística, combinando la
+                  carga internacional, el tránsito, el transporte nacional y la
+                  gestión de centros de distribución para satisfacer sus
+                  necesidades actuales y futuras.
+                </p>
+              </div>
+              <div class="d-flex">
+                <a href="#" class="btn btn-outline-secondary">prende más +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-5 container">
+        <div class="d-flex flex-column gap-lg-5 gap-3">
+          <div class="d-flex flex-row gap-1">
+            <div class="line bg-red"></div>
+            <h1 class="text-red fs-1 fw-bolder w-lg-25 w-100">
+              Descubra nuestras soluciones
+            </h1>
+          </div>
+          <p class="fs-4 w-lg-50 w-100">
+            Soluciones a medida para optimizar su cadena de suministro y
+            afrontar sus retos logísticos
+          </p>
+        </div>
+        <div
+          class="mt-lg-5 d-flex flex-column flex-lg-row h-700 gap-xll-5 gap-xl-4 gap-3 text-white py-lg-3"
+        >
+          <div class="position-relative scale-1">
+            <img
+              src="./assets/cargoship-in-watchpng.png"
+              alt="cargoship"
+              class="bg-center h-fixed-200"
+            />
+            <div
+              class="d-flex flex-column align-items-start gap-lg-3 position-absolute bottom-0 start-0 ps-lg-5 pb-lg-5 px-3 pb-2"
+            >
+              <img
+                src="./assets/fast-delivery-truck-van-svgrepo-com.svg"
+                alt="image"
+                class="svg-size svg-filter-white"
+              />
+              <h3 class="fs-2 fw-bolder">Transporte</h3>
+              <p class="opacity-75 fs-7">
+                El transporte es nuestra actividad principal, nacional o
+                internacional, Marruecos y Europa, nuestras soluciones están
+                diseñadas para adaptarse a sus necesidades
+              </p>
+              <ul>
+                <li>Transporte FTL</li>
+                <li>Transporte de grupaje</li>
+              </ul>
+            </div>
+          </div>
+          <div class="position-relative scale-1">
+            <img
+              src="./assets/semi-truck-in-road.png"
+              alt="cargoship"
+              class="bg-center h-fixed-200"
+            />
+            <div
+              class="d-flex flex-column align-items-start gap-lg-3 position-absolute bottom-0 start-0 ps-lg-5 pb-lg-5 px-3 pb-2"
+            >
+              <img
+                src="./assets/package-svgrepo-com.svg"
+                alt="image"
+                class="svg-size svg-filter-white"
+              />
+              <h3 class="fs-2 fw-bolder">Tránsito y aduanas</h3>
+              <p class="opacity-75 fs-7">
+                Transfiera sus mercancías de un régimen aduanero a otro sin
+                problemas y sin limitaciones gracias a la experiencia de SJL
+              </p>
+              <ul>
+                <li>Operador Económico Autorizado (OEA) en Marruecos</li>
+                <li>Asistencia 24 horas</li>
+                <li>Asistencia y asesoramiento</li>
+              </ul>
+            </div>
+          </div>
+          <div class="position-relative scale-1">
+            <img
+              src="./assets/driver.png"
+              alt="cargoship"
+              class="bg-center h-fixed-200"
+            />
+            <div
+              class="d-flex flex-column align-items-start gap-lg-3 position-absolute bottom-0 start-0 ps-lg-5 pb-lg-5 px-3 pb-2"
+            >
+              <img
+                src="./assets/business-global-globe-svgrepo-com.svg"
+                alt="image"
+                class="svg-size svg-filter-white"
+              />
+              <h3 class="fs-2 fw-bolder">SJL, integrador de soluciones</h3>
+              <p class="opacity-75 fs-7">
+                Como creador de soluciones integradas B2B para toda la cadena de
+                transporte y logística, SJL le acompaña en el despliegue de su
+                proyecto logístico
+              </p>
+              <ul>
+                <li>Experiencia y conocimientos reconocidos</li>
+                <li>Soluciones personalizadas</li>
+                <li>Servicios optimizados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./assets/car-factory.webp" alt="car-factory" />
+            <div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
