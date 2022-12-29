@@ -40,11 +40,38 @@ body {
 }
 
 .h-600 {
-  min-height: 600px;
+  height: 600px !important;
+}
+
+.h-650 {
+  height: 100% !important;
 }
 
 .h-fixed-200 {
   height: 400px !important;
+}
+
+.pl-10 {
+  padding-left: 10% !important;
+}
+
+.pr-10 {
+  padding-right: 10% !important;
+}
+
+.pl-5 {
+  padding-left: 5% !important;
+}
+
+
+.rounded-right {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.rounded-left {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .fs-7 {
@@ -199,7 +226,7 @@ body {
 
 .btn-outline-secondary {
   color: #fff;
-  background-color: #16492f;
+  background-color: transparent;
   border-color: #fff;
   font-size: small;
 }
@@ -311,6 +338,10 @@ body {
   height: 70px;
 }
 
+.border-20 {
+  border-radius: 20px;
+}
+
 .bg-center {
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,7 +349,6 @@ body {
   height: 100%;
   background-position: center;
   object-fit: cover;
-  border-radius: 20px;
 }
 
 @media (min-width: 768px) {

@@ -13,6 +13,19 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+var swiper = new Swiper(".swiper-news", {
+  slidesPerView: "auto",
+  // loop: true,
+  // autoplay: {
+  //   delay: 5000,
+  //   pauseOnMouseEnter: true,
+  // },
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination-2",
+    clickable: true,
+  },
+});
 
 const openButton = document.getElementById("open-button");
 const closeButton = document.getElementById("close-button");

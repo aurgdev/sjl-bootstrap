@@ -31,6 +31,10 @@
     height: 80px;
   }
 
+  .border-sm-20 {
+    border-radius: 20px;
+  }
+
   .btn {
     padding: 18px 50px;
   }
@@ -119,6 +123,10 @@
     width: 100% !important;
   }
 
+  .border-md-20 {
+    border-radius: 20px;
+  }
+
   .h-800 {
     height: 100%;
   }
@@ -178,6 +186,9 @@
     height: 100vh !important;
   }
 
+  .border-lg-20 {
+    border-radius: 20px;
+  }
 
   .line {
     width: 3%;
@@ -237,6 +248,10 @@
     padding-top: 20px;
     font-size: 16px;
   }
+
+
+
+
 }
 
 @media (min-width: 1280px) {
@@ -250,6 +265,10 @@
 
   .w-xl-40 {
     width: 40% !important;
+  }
+
+  .w-xl-55 {
+    width: 75% !important;
   }
 
   .w-xl-75 {
@@ -268,6 +287,10 @@
     height: 90px;
   }
 
+  .border-xl-20 {
+    border-radius: 20px;
+  }
+
   .svg-size-2 {
     height: 150px;
   }
@@ -276,6 +299,27 @@
     font-size: 4rem
   }
 
+  .h-650 {
+    height: 600px !important;
+  }
+
+  .rounded-right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .rounded-left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .mr-10 {
+    margin-right: 10% !important;
+  }
+
+  .ml-10 {
+    margin-left: 10% !important;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -301,6 +345,10 @@
 
   .w-xxl-100 {
     width: 100% !important;
+  }
+
+  .border-xxl-20 {
+    border-radius: 20px;
   }
 
   .logo {
