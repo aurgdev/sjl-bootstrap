@@ -12,7 +12,7 @@ body {
 }
 
 .h-screen {
-  height: 100vh;
+  height: 100%;
 }
 
 .w-screen {
@@ -51,6 +51,10 @@ body {
   font-size: 13px;
 }
 
+.numbers-size {
+  font-size: 1.6rem
+}
+
 .scale-1 {
   transition: all ease-in-out 300ms;
 }
@@ -60,11 +64,18 @@ body {
   transform: scale(1.1);
   transition: all ease-in-out 300ms;
   border-radius: 20px;
-  background: rgba(219, 93, 9, 0.438);
   box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
   z-index: 3;
+}
+
+.hover-shadow:hover {
+  border-radius: 20px;
+  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.445);
+  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.466);
+  transition: all ease-in-out 300ms;
 }
 
 .scale-1::before {
@@ -80,6 +91,71 @@ body {
       rgba(255, 255, 255, 0) 0%,
       rgba(0, 0, 0, 0.822) 99%);
   z-index: 0;
+}
+
+.scale-2 {
+  transition: all ease-in-out 300ms;
+}
+
+.scale-2:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: all ease-in-out 300ms;
+  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
+  z-index: 3;
+}
+
+.hide-desktop {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .5s, opacity 0.5s linear;
+}
+
+.scale-2:hover>.hide-desktop {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.bg-gradient-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(121, 22, 22, 0.582) 99%);
+  z-index: 0;
+}
+
+.bg-gradient-green::before {
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(16, 97, 23, 0.473) 99%);
+}
+
+.bg-gradient-blue::before {
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(22, 17, 94, 0.185) 99%);
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.row>* {
+  padding: 0;
+}
+
+.-z-1 {
+  z-index: -1;
 }
 
 .btn {
@@ -223,6 +299,10 @@ body {
 }
 
 .svg-size {
+  height: 60px;
+}
+
+.svg-size-2 {
   height: 60px;
 }
 
