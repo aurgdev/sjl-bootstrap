@@ -26,229 +26,205 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <title>SJL</title>
   </head>
   <body>
-    <header
-      class="container d-flex flex-row align-items-center justify-content-between py-xl-5 py-lg-4 py-1 px-0"
-    >
-      <a href="/" class="">
-        <img src="./assets/logo.png" alt="logo" class="logo" />
-      </a>
-      <button class="d-flex d-lg-none" type="button" id="open-button">
-        <img src="./assets/menu.svg" alt="menu" style="height: 26px" />
-      </button>
-      <div class="bg-menu d-flex d-lg-none" id="menu">
-        <nav
-          class="container mt-1 h-100 justify-content-between flex-column d-flex flex-column align-items-center gap-1 gap-xl-5 py-4"
-        >
-          <div class="d-flex justify-content-end w-100">
-            <button type="button" id="close-button">
-              <img
-                src="./assets/menu-close.svg"
-                alt="close-menu"
-                style="height: 26px"
-              />
-            </button>
-          </div>
-          <ul
-            class="nav d-flex flex-column align-items-center gap-4 mt-4 fs-5 fw-bold"
+    <header class="header w-100">
+      <div
+        class="container d-flex flex-row align-items-center justify-content-between py-lg-0 py-1 px-0"
+      >
+        <a href="/" class="">
+          <img src="./assets/logo.png" alt="logo" class="logo" />
+        </a>
+        <button class="d-flex d-lg-none" type="button" id="open-button">
+          <img src="./assets/menu.svg" alt="menu" style="height: 26px" />
+        </button>
+        <div class="bg-menu d-flex d-lg-none" id="menu">
+          <nav
+            class="container mt-1 h-100 justify-content-between flex-column d-flex flex-column align-items-center gap-1 gap-xl-5 py-4 z-10"
           >
-            <li
-              class="nav-item d-flex flex-row-reverse gap-2 align-items-center active-link"
+            <div class="d-flex justify-content-end w-100">
+              <button type="button" id="close-button">
+                <img
+                  src="./assets/menu-close.svg"
+                  alt="close-menu"
+                  style="height: 26px"
+                />
+              </button>
+            </div>
+            <ul
+              class="nav d-flex flex-column align-items-center gap-4 mt-4 fs-5 fw-bold"
             >
-              <a href="/about.html" class="">A proposito</a>
-              <span></span>
-            </li>
-            <li class="nav-item"><a href="#" class="">Transportación</a></li>
-            <li class="nav-item">
-              <a href="/prices.html" class="">Logística</a>
-            </li>
+              <li
+                class="nav-item d-flex flex-row-reverse gap-2 align-items-center active-link"
+              >
+                <a href="/about.html" class="">A proposito</a>
+                <span></span>
+              </li>
+              <li class="nav-item"><a href="#" class="">Transportación</a></li>
+              <li class="nav-item">
+                <a href="/prices.html" class="">Logística</a>
+              </li>
 
-            <li class="nav-item"><a href="#" class="">Carreras</a></li>
-            <li class="nav-item"><a href="#" class="">sala de noticias</a></li>
+              <li class="nav-item"><a href="#" class="">Carreras</a></li>
+              <li class="nav-item">
+                <a href="#" class="">sala de noticias</a>
+              </li>
+            </ul>
+            <div class="d-flex gap-3 mt-4 svg-filter-green">
+              <a href="#">
+                <img
+                  src="./assets/instagram.svg"
+                  alt="instagram"
+                  style="height: 32px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/facebook.svg"
+                  alt="facebbok"
+                  style="height: 32px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/linkedin-svgrepo-com.svg"
+                  alt="tiktok"
+                  style="height: 32px"
+                />
+              </a>
+            </div>
+            <div class="d-flex gap-4">
+              <a href="#">
+                <img
+                  src="./assets/france.svg"
+                  alt="france"
+                  style="height: 40px"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/united-kingdom-uk.svg"
+                  alt="uk"
+                  style="height: 40px"
+                />
+              </a>
+            </div>
+            <div class="text-center text-red">
+              <span class="fs-7">© 2022 Reservados todos los derechos</span>
+            </div>
+          </nav>
+        </div>
+        <nav
+          class="d-lg-flex d-none flex-row align-items-center justify-content-between gap-1 gap-xl-5"
+        >
+          <ul class="nav nav-pills gap-1 gap-lg-1 gap-xl-3 gap-xxl-5">
+            <li
+              class="nav-item active-link d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">A proposito</a>
+              <span></span>
+              <div class="dropdown-content">
+                <a class="" href="#"> Sobre nosotros VF </a>
+                <a class="" href="#"> Historia y aspectos destacados</a>
+                <a class="" href="#"> Nuestros valores</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">A proposito</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Transport FTL </a>
+                <a class="" href="#"> Soluciones de Grupaje</a>
+                <a class="" href="#"> Transporte excepcional</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Logística</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Soluciones logisticas </a>
+                <a class="" href="#"> Centros logisticos</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Carreras</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Únete a SJL </a>
+                <a class="" href="#"> NUESTRAS OFERTAS DE TRABAJO</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Sala de noticias</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Noticias </a>
+                <a class="" href="#"> Recursos</a>
+                <a class="" href="#"> Espacio Clienté</a>
+              </div>
+            </li>
           </ul>
-          <div class="d-flex gap-3 mt-4 svg-filter-green">
+        </nav>
+        <div
+          class="d-lg-flex d-none gap-1 gap-xl-2 gap-xxl-5 align-items-center"
+        >
+          <div class="d-flex gap-2">
+            <a href="#">
+              <img
+                src="./assets/france.svg"
+                alt="france"
+                style="height: 30px"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./assets/united-kingdom-uk.svg"
+                alt="spain"
+                style="height: 30px"
+              />
+            </a>
+          </div>
+          <div class="d-flex gap-2 svg-filter-green">
             <a href="#">
               <img
                 src="./assets/instagram.svg"
                 alt="instagram"
-                style="height: 32px"
+                style="height: 24px"
               />
             </a>
             <a href="#">
               <img
                 src="./assets/facebook.svg"
                 alt="facebbok"
-                style="height: 32px"
+                style="height: 24px"
               />
             </a>
             <a href="#">
               <img
                 src="./assets/linkedin-svgrepo-com.svg"
                 alt="tiktok"
-                style="height: 32px"
+                style="height: 24px"
               />
             </a>
           </div>
-          <div class="d-flex gap-4">
-            <a href="#">
-              <img
-                src="./assets/france.svg"
-                alt="france"
-                style="height: 40px"
-              />
-            </a>
-            <a href="#">
-              <img
-                src="./assets/united-kingdom-uk.svg"
-                alt="uk"
-                style="height: 40px"
-              />
-            </a>
-          </div>
-          <div class="text-center text-red">
-            <span class="fs-7">© 2022 Reservados todos los derechos</span>
-          </div>
-        </nav>
-      </div>
-      <nav
-        class="d-lg-flex d-none flex-row align-items-center justify-content-between gap-1 gap-xl-5"
-      >
-        <ul class="nav nav-pills gap-1 gap-lg-1 gap-xl-3 gap-xxl-5">
-          <li
-            class="nav-item active-link d-flex flex-column align-items-center dropdown"
-          >
-            <a
-              href="#"
-              class="dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >A proposito</a
-            >
-            <span></span>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#"> Sobre nosotros VF </a>
-              <a class="dropdown-item" href="#">
-                Historia y aspectos destacados</a
-              >
-              <a class="dropdown-item" href="#"> Nuestros valores</a>
-            </div>
-          </li>
-          <li class="nav-item d-flex flex-column align-items-center dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >A proposito</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#"> Transport FTL </a>
-              <a class="dropdown-item" href="#"> Soluciones de Grupaje</a>
-              <a class="dropdown-item" href="#"> Transporte excepcional</a>
-            </div>
-          </li>
-          <li class="nav-item d-flex flex-column align-items-center dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Logística</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#"> Soluciones logisticas </a>
-              <a class="dropdown-item" href="#"> Centros logisticos</a>
-            </div>
-          </li>
-          <li class="nav-item d-flex flex-column align-items-center dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Carreras</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#"> Únete a SJL </a>
-              <a class="dropdown-item" href="#"> NUESTRAS OFERTAS DE TRABAJO</a>
-            </div>
-          </li>
-          <li class="nav-item d-flex flex-column align-items-center dropdown">
-            <a
-              href="#"
-              class="dropdown-toggle"
-              id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >Sala de noticias</a
-            >
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#"> Noticias </a>
-              <a class="dropdown-item" href="#"> Recursos</a>
-              <a class="dropdown-item" href="#"> Espacio Clienté</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="d-lg-flex d-none gap-1 gap-xl-2 gap-xxl-5 align-items-center">
-        <div class="d-flex gap-2">
-          <a href="#">
-            <img src="./assets/france.svg" alt="france" style="height: 30px" />
-          </a>
-          <a href="#">
-            <img
-              src="./assets/united-kingdom-uk.svg"
-              alt="spain"
-              style="height: 30px"
-            />
-          </a>
-        </div>
-        <div class="d-flex gap-2 svg-filter-green">
-          <a href="#">
-            <img
-              src="./assets/instagram.svg"
-              alt="instagram"
-              style="height: 24px"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="./assets/facebook.svg"
-              alt="facebbok"
-              style="height: 24px"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="./assets/linkedin-svgrepo-com.svg"
-              alt="tiktok"
-              style="height: 24px"
-            />
-          </a>
         </div>
       </div>
     </header>
     <main>
-      <section class="my-3 my-lg-0">
+      <section>
         <!-- Slider main container -->
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-white">
               <img
-                class="bg-center border-20 container mx-3"
+                class="bg-center border-20 container mx-3 py-2"
                 src="./assets/cargo-port.webp"
                 alt="image"
               />
@@ -275,7 +251,7 @@
             </div>
             <div class="swiper-slide text-white">
               <img
-                class="bg-center border-20 container mx-3"
+                class="bg-center border-20 container mx-3 py-2"
                 src="./assets/sjl-warehouse.jpg"
                 alt="image"
               />
@@ -302,7 +278,7 @@
             </div>
             <div class="swiper-slide text-white">
               <img
-                class="bg-center border-20 container mx-3"
+                class="bg-center border-20 container mx-3 py-2"
                 src="./assets/sjl-truck.jpg"
                 alt="image"
               />
@@ -329,7 +305,7 @@
             </div>
             <div class="swiper-slide text-white">
               <img
-                class="bg-center border-20 container mx-3"
+                class="bg-center border-20 container mx-3 py-2"
                 src="./assets/cargo-port.webp"
                 alt="image"
               />
@@ -475,7 +451,7 @@
         <div class="d-flex flex-column gap-lg-5 gap-3">
           <div class="d-flex flex-row gap-1">
             <div class="line bg-red"></div>
-            <h1 class="text-red fs-1 fw-bolder w-lg-25 w-100">
+            <h1 class="text-red fs-1 fw-bolder w-100">
               Descubra nuestras soluciones
             </h1>
           </div>
@@ -706,7 +682,7 @@
               class="svg-filter-green mb-lg-4 svg-size-2"
             />
             <div class="text-red">
-              <h3 class="numbers-size fw-bolder mb-lg-2">+33100</h3>
+              <h3 class="numbers-size fw-bolder mb-lg-2" id="count1">+33100</h3>
               <p class="fs-7">m2 de actividades logísticas</p>
             </div>
           </div>
@@ -1086,7 +1062,182 @@
         </div>
       </section>
       <!-- Footer -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="d-flex justify-content-end container">
+          <ul class="py-lg-4 py-2 nav nav-pills gap-3 gap-md-5">
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">A proposito</a>
+              <span></span>
+              <div class="dropdown-content">
+                <a class="" href="#"> Sobre nosotros VF </a>
+                <a class="" href="#"> Historia y aspectos destacados</a>
+                <a class="" href="#"> Nuestros valores</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">A proposito</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Transport FTL </a>
+                <a class="" href="#"> Soluciones de Grupaje</a>
+                <a class="" href="#"> Transporte excepcional</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Logística</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Soluciones logisticas </a>
+                <a class="" href="#"> Centros logisticos</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Carreras</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Únete a SJL </a>
+                <a class="" href="#"> NUESTRAS OFERTAS DE TRABAJO</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Sala de noticias</a>
+              <div class="dropdown-content">
+                <a class="" href="#"> Noticias </a>
+                <a class="" href="#"> Recursos</a>
+                <a class="" href="#"> Espacio Clienté</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-green py-5">
+          <div
+            class="container d-flex justify-content-between align-items-center flex-column-reverse flex-lg-row"
+          >
+            <div class="d-flex flex-column align-items-start">
+              <img
+                src="./assets/logo.svg"
+                alt="logo"
+                class="svg-size-2 svg-filter-white"
+              />
+              <div class="d-flex gap-3 mt-5 py-lg-3 svg-filter-white">
+                <a href="#">
+                  <img
+                    src="./assets/instagram.svg"
+                    alt="instagram"
+                    style="height: 32px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/facebook.svg"
+                    alt="facebbok"
+                    style="height: 32px"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="./assets/linkedin-svgrepo-com.svg"
+                    alt="tiktok"
+                    style="height: 32px"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex flex-row align-items-end justify-content-between gap-lg-5 text-capitalize"
+              >
+                <ul
+                  class="py-2 nav nav-pills flex-column text-white fw-semibold"
+                >
+                  <li class="mb-2 fw-bold fs-5">Enlaces Útiles</li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Transporte excepcional</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Transport FTL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Soluciones de Grupaje</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Centros logisticos</a>
+                  </li>
+                </ul>
+                <ul
+                  class="py-2 nav nav-pills flex-column text-white fw-semibold"
+                >
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Soluciones logisticas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Carreras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn"
+                      >NUESTRAS OFERTAS DE TRABAJO</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Recursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Conductores</a>
+                  </li>
+                </ul>
+                <ul
+                  class="py-2 nav nav-pills flex-column text-white fw-semibold"
+                >
+                  <li class="mb-2 fw-bold fs-5">A proposito</li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn"
+                      >Política de gestión de cookies</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Información legal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Política de privacidad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="dropdown-btn">Contáctenos</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-white mt-lg-3">
+                <h3 class="fw-bold fs-5">
+                  ingrese su dirección de correo electrónico
+                </h3>
+                <p class="opacity-50">recibe nuestras ofertas exclusivas</p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" />
+                  <button
+                    class="btn btn-outline-secondary bg-red w-25"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Inscribirse
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -1094,5 +1245,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js" type="module"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
