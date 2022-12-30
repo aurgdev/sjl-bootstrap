@@ -19,7 +19,7 @@ var swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     pauseOnMouseEnter: false,
   },
   centeredSlides: true,
@@ -30,11 +30,11 @@ var swiper = new Swiper(".swiper", {
 });
 var swiper = new Swiper(".swiper-news", {
   slidesPerView: "auto",
-  // loop: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   pauseOnMouseEnter: true,
-  // },
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    pauseOnMouseEnter: true,
+  },
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination-2",
