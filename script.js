@@ -18,10 +18,10 @@ closeButton.addEventListener("click", toggleMenu);
 var swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   loop: true,
-  autoplay: {
-    delay: 4000,
-    pauseOnMouseEnter: false,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   pauseOnMouseEnter: false,
+  // },
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",

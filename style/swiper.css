@@ -1,0 +1,194 @@
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper-2 {
+  height: 100%;
+}
+
+.swiper-wrapper {
+  max-height: 94%;
+  padding-bottom: 20px;
+}
+
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #16492f;
+  background-color: transparent;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  display: flex;
+  bottom: 2%;
+  left: 50%;
+  width: 100%;
+}
+
+.prefix {
+  position: absolute;
+  top: 59%;
+  bottom: 0;
+  left: 40%;
+  right: 0%;
+  height: 20px;
+}
+
+.prefix-2 {
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 40%;
+  right: 0%;
+  height: 20px;
+}
+
+.prefix-color .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #16492f;
+}
+
+.prefix-color .swiper-pagination-bullet {
+  border: 1px solid #fff;
+}
+
+@media (min-width: 420px) {
+  .prefix {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 40%;
+    right: 0%;
+    height: 20px;
+  }
+
+  .prefix-2 {
+    position: absolute;
+    top: 52%;
+    bottom: 0;
+    left: 40%;
+    right: 0%;
+    height: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  .prefix {
+    position: absolute;
+    top: 33%;
+    bottom: 0;
+    left: 40%;
+    right: 0%;
+    height: 20px;
+  }
+
+  .prefix-2 {
+    position: absolute;
+    top: 33%;
+    bottom: 0;
+    left: 40%;
+    right: 0%;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prefix {
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: -15%;
+    right: 0%;
+    height: 20px;
+  }
+
+  .prefix-2 {
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: -15%;
+    right: 0%;
+    height: 20px;
+  }
+
+}
+
+
+
+@media (min-width: 1280px) {
+  .swiper-wrapper {
+    max-height: 90%;
+    padding-bottom: 20px;
+  }
+
+  .prefix {
+    position: absolute;
+    top: 82%;
+    bottom: 0;
+    left: -45%;
+    right: 0%;
+    height: 20px;
+  }
+
+  .prefix-2 {
+    position: absolute;
+    top: 82%;
+    bottom: 0;
+    left: 65%;
+    right: 0%;
+    height: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #16492f;
+    background-color: transparent;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    will-change: width;
+  }
+
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: flex;
+    bottom: 6%;
+    left: 60%;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #16492f;
+  }
+}
