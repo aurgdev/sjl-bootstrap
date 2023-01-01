@@ -249,6 +249,14 @@
     height: 400px !important;
   }
 
+  .right-image-position {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+  }
+
   /* .mt-200 {
     margin-top: 500px;
   } */
@@ -295,6 +303,9 @@
     font-size: 16px;
   }
 
+  .fs-8 {
+    font-size: 17px;
+  }
 
   .svg-size {
     height: 100px;
@@ -500,5 +511,9 @@
 
   .numbers-size {
     font-size: 4rem
+  }
+
+  .fs-8 {
+    font-size: 18px;
   }
 }

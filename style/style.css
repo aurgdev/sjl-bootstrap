@@ -5,6 +5,8 @@
 html,
 body {
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+
 }
 
 .container {
@@ -64,7 +66,7 @@ body {
 }
 
 .h-fixed-300 {
-  height: 600px !important;
+  height: 100% !important;
 }
 
 .h-400 {
@@ -96,6 +98,10 @@ body {
 
 .fs-7 {
   font-size: 13px;
+}
+
+.fs-8 {
+  font-size: 14px;
 }
 
 .numbers-size {
@@ -277,12 +283,12 @@ body {
   bottom: 0;
   left: 0;
   right: 100%;
-  top: 0;
+  top: 70%;
 }
 
 .swiper-info {
   padding: 10px 10px 10px 30px;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0;
 }
 
 .swiper-info-text h1 {
@@ -420,10 +426,28 @@ body {
   color: #fff;
 }
 
-.planet-position {
+.left-image-position {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 11%;
+}
+
+.right-image-position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+}
+
+.bg-trasporte-ftl {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  background-image: url(https://sjl-group.com/wp-content/uploads/2021/12/pexels-tom-fisk-3057960-scaled-5-1-2-3-2-1.jpg?id=4872) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
 }
