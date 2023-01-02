@@ -85,6 +85,10 @@ body {
   padding-left: 5% !important;
 }
 
+ol,
+ul {
+  padding-left: 1rem;
+}
 
 .rounded-right {
   border-top-right-radius: 0px;
@@ -355,9 +359,30 @@ body {
   filter: invert(19%) sepia(68%) saturate(460%) hue-rotate(97deg) brightness(95%) contrast(90%);
 }
 
+.svg-filter-red {
+  filter: invert(17%) sepia(34%) saturate(4407%) hue-rotate(327deg) brightness(91%) contrast(91%);
+}
+
+.svg-filter-red-parent>img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(106%) contrast(106%);
+}
+
+.svg-filter-red-parent:hover>img {
+  filter: invert(17%) sepia(34%) saturate(4407%) hue-rotate(327deg) brightness(91%) contrast(91%);
+
+}
+
 
 .svg-filter-white {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(106%) contrast(106%);
+}
+
+.svg-filter-white-parent>img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(45deg) brightness(106%) contrast(106%);
+}
+
+.svg-filter-white-parent:hover>img {
+  filter: invert(19%) sepia(68%) saturate(460%) hue-rotate(97deg) brightness(95%) contrast(90%);
 }
 
 .svg-size {
@@ -375,6 +400,14 @@ body {
 
 .border-20 {
   border-radius: 20px;
+}
+
+.border-red {
+  border-color: #8d2337;
+}
+
+.border-green {
+  border-color: #16492f;
 }
 
 .bg-center {
@@ -450,4 +483,57 @@ body {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: fixed !important;
+}
+
+ul.timeline-small {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline-small:before {
+  content: ' ';
+  background: #8d2337;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 1px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline-small>li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline-small>li:before {
+  content: ' ';
+  background: #8d2337;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #16492f;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none
+}
+
+.accordion-button::after {
+  color: #8d2337;
+  fill: #8d2337;
+  stroke: #8d2337;
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: #8d233611;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }

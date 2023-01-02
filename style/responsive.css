@@ -16,6 +16,10 @@
     width: 40% !important;
   }
 
+  .w-sm-30 {
+    width: 30% !important;
+  }
+
   .w-sm-50 {
     width: 50% !important;
   }
@@ -143,6 +147,10 @@
     width: 40% !important;
   }
 
+  .w-md-30 {
+    width: 30% !important;
+  }
+
   .w-md-50 {
     width: 50% !important;
   }
@@ -206,6 +214,10 @@
 
   .w-lg-40 {
     width: 40% !important;
+  }
+
+  .w-lg-30 {
+    width: 30% !important;
   }
 
   .w-lg-55 {
@@ -361,6 +373,10 @@
     width: 40% !important;
   }
 
+  .w-xl-30 {
+    width: 30% !important;
+  }
+
   .w-xl-55 {
     width: 75% !important;
   }
@@ -460,6 +476,10 @@
 
   .w-xxl-40 {
     width: 40% !important;
+  }
+
+  .w-xxl-30 {
+    width: 30% !important;
   }
 
   .w-xxl-50 {
