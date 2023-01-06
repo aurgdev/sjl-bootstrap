@@ -116,24 +116,7 @@ ul {
   transition: all ease-in-out 300ms;
 }
 
-.scale-1:hover {
-  overflow: hidden;
-  transform: scale(1.1);
-  transition: all ease-in-out 300ms;
-  border-radius: 20px;
-  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  z-index: 3;
-}
 
-.hover-shadow:hover {
-  border-radius: 20px;
-  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.445);
-  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.466);
-  transition: all ease-in-out 300ms;
-}
 
 .scale-1::before {
   content: "";
@@ -154,15 +137,7 @@ ul {
   transition: all ease-in-out 300ms;
 }
 
-.scale-2:hover {
-  overflow: hidden;
-  transform: scale(1.1);
-  transition: all ease-in-out 300ms;
-  box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 3px 5px 31px 5px rgba(0, 0, 0, 0.63);
-  z-index: 3;
-}
+
 
 .hide-desktop {
   visibility: visible;

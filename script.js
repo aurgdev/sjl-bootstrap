@@ -28,19 +28,6 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
-var swiper = new Swiper(".swiper-news", {
-  slidesPerView: "auto",
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    pauseOnMouseEnter: true,
-  },
-  centeredSlides: true,
-  pagination: {
-    el: ".swiper-pagination-2",
-    clickable: true,
-  },
-});
 
 $(window).scroll(testScroll);
 var viewed = false;
