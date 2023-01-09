@@ -108,6 +108,10 @@ ul {
   font-size: 14px;
 }
 
+.fs-9 {
+  font-size: 12px;
+}
+
 .numbers-size {
   font-size: 1.6rem
 }
@@ -308,12 +312,25 @@ ul {
 
 .active-menu {
   z-index: 99;
-
   transform: translateX(0);
   overscroll-behavior: contain;
   position: fixed;
   background: #fff
 }
+
+.active {
+  font-weight: bold !important;
+  color: #8d2337;
+  background-color: #16492f;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  font-weight: bold !important;
+  color: #8d2337;
+  background-color: #16492f;
+}
+
 
 .active-link {
   color: #8d2337

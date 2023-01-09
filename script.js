@@ -1,5 +1,7 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
 
+// menu toggle
+
 const openButton = document.getElementById("open-button");
 const closeButton = document.getElementById("close-button");
 const menu = document.getElementById("menu");
@@ -15,19 +17,32 @@ function toggleMenu() {
 openButton.addEventListener("click", toggleMenu);
 closeButton.addEventListener("click", toggleMenu);
 
+// active url colored
+
+let url = window.location.href;
+let activeUrl = url.substring(url.lastIndexOf("/") + 1);
+console.log("loaction href", activeUrl);
+$(document).ready(function () {
+  $("a[href*='" + activeUrl + "']").addClass("active");
+});
+
+// swiper carousel
+
 var swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   loop: true,
-  // autoplay: {
-  //   delay: 4000,
-  //   pauseOnMouseEnter: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    pauseOnMouseEnter: false,
+  },
   centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
+
+// numbers animation
 
 $(window).scroll(testScroll);
 var viewed = false;
@@ -63,6 +78,8 @@ function testScroll() {
     });
   }
 }
+
+// timeline
 
 function qs(selector, all = false) {
   return all

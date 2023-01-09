@@ -41,7 +41,7 @@
 .swiper-pagination-fraction {
   display: flex;
   bottom: 2%;
-  left: 50%;
+  left: 40%;
   width: 100%;
 }
 
@@ -53,7 +53,19 @@
 
 @media (min-width: 420px) {}
 
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    display: flex;
+    bottom: 2%;
+    left: 50%;
+    width: 100%;
+  }
+
+}
 
 @media (min-width: 1024px) {}
 
