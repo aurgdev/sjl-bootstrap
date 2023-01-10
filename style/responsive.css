@@ -201,6 +201,24 @@
     padding-top: 10px;
     font-size: 16px;
   }
+
+  .left-image-position {
+    max-width: 40% !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 11%;
+  }
+
+  .right-image-position {
+    max-width: 40% !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 10%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -261,12 +279,34 @@
     height: 400px !important;
   }
 
+  .h-600-resopnsive {
+    height: 600px !important;
+  }
+
+
   .right-image-position {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 50%;
+  }
+
+  .page-title {
+    background-image: url("../assets/camion-carriere-sjl-afrique-europe.jpg");
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 50px;
+  }
+
+  .absolute {
+    position: absolute;
   }
 
   /* .mt-200 {

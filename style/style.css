@@ -57,6 +57,10 @@ body {
   height: 600px !important;
 }
 
+.h-600-resopnsive {
+  height: 200px !important;
+}
+
 .h-650 {
   height: 100% !important;
 }
@@ -385,6 +389,9 @@ ul {
   height: 60px;
 }
 
+.relative {
+  position: relative;
+}
 
 .logo {
   height: 70px;
@@ -452,19 +459,57 @@ ul {
 }
 
 .left-image-position {
+  max-width: 84% !important;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 11%;
+  left: 8%;
+  min-height: 240px
 }
 
 .right-image-position {
+  max-width: 84% !important;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 10%;
+  left: 8%;
+  min-height: 240px
+}
+
+.page-title {
+  background-image: url("../assets/camion-carriere-sjl-afrique-europe.jpg");
+  min-height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 50px;
+}
+
+.page-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#8d233638 0%, #8d2336 80%);
+  top: -1px;
+  right: 0px;
+  opacity: 100%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+
+.page-title h1 {
+  color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .bg-trasporte-ftl {
@@ -495,7 +540,7 @@ ul.timeline-small:before {
 
 ul.timeline-small>li {
   margin: 20px 0;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 
 ul.timeline-small>li:before {
@@ -509,6 +554,7 @@ ul.timeline-small>li:before {
   width: 20px;
   height: 20px;
   z-index: 400;
+  margin-top: 3px;
 }
 
 .accordion-button:focus {
@@ -518,14 +564,14 @@ ul.timeline-small>li:before {
   box-shadow: none
 }
 
-.accordion-button::after {
-  color: #8d2337;
-  fill: #8d2337;
-  stroke: #8d2337;
-}
 
 .accordion-button:not(.collapsed) {
   color: inherit;
-  background-color: #8d233611;
-  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+  background-color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  filter: invert(17%) sepia(34%) saturate(4407%) hue-rotate(327deg) brightness(91%) contrast(91%);
+  mix-blend-mode: difference;
 }

@@ -21,7 +21,6 @@ closeButton.addEventListener("click", toggleMenu);
 
 let url = window.location.href;
 let activeUrl = url.substring(url.lastIndexOf("/") + 1);
-console.log("loaction href", activeUrl);
 $(document).ready(function () {
   $("a[href*='" + activeUrl + "']").addClass("active");
 });
@@ -105,7 +104,6 @@ function scrollHandler(e) {
   const lineRect = line.getBoundingClientRect(); // const lineHeight = lineRect.bottom - lineRect.top;
 
   const dist = targetY - timelineRect.top;
-  console.log(dist);
 
   if (down && !full) {
     set = Math.max(set, dist);
