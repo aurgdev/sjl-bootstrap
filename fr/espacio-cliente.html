@@ -24,23 +24,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/swiper.css" />
-    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/swiper.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
     <title>SJL</title>
   </head>
   <body>
-    <!-- Header -->
     <header class="header w-100">
       <div
         class="container d-flex flex-row align-items-center justify-content-between py-lg-0 py-1 px-0"
       >
-        <a href="/" class="">
-          <img src="./assets/logo.png" alt="logo" class="logo" />
+        <a href="./" class="bg-white">
+          <img src="../assets/logo.png" alt="logo" class="logo" />
         </a>
         <button class="d-flex d-lg-none" type="button" id="open-button">
-          <img src="./assets/menu.svg" alt="menu" style="height: 26px" />
+          <img src="../assets/menu.svg" alt="menu" style="height: 26px" />
         </button>
         <div class="bg-menu d-flex d-lg-none" id="menu">
           <nav
@@ -49,7 +48,7 @@
             <div class="d-flex justify-content-end w-100">
               <button type="button" id="close-button">
                 <img
-                  src="./assets/menu-close.svg"
+                  src="../assets/menu-close.svg"
                   alt="close-menu"
                   style="height: 26px"
                 />
@@ -65,20 +64,21 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >A proposito</a
+                >
+                  A propos</a
                 >
                 <div class="dropdown-menu bg-red">
                   <a
                     class="dropdown-item text-white"
-                    href="/sobre-grupo-sjl.html"
+                    href="./sobre-grupo-sjl.html"
                   >
                     Sobre nosotros VF
                   </a>
-                  <a class="dropdown-item text-white" href="/historia.html">
-                    Historia y aspectos destacados</a
+                  <a class="dropdown-item text-white" href="./historia.html">
+                    Histoire</a
                   >
-                  <a class="dropdown-item text-white" href="/valores.html">
-                    Nuestros valores</a
+                  <a class="dropdown-item text-white" href="./valores.html">
+                    Nos valeurs</a
                   >
                 </div>
               </li>
@@ -89,26 +89,26 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Transportación</a
+                  >Transport</a
                 >
                 <div class="dropdown-menu bg-red">
                   <a
                     class="dropdown-item text-white"
-                    href="/transporte-ftl.html"
+                    href="./transporte-ftl.html"
                   >
                     Transport FTL
                   </a>
                   <a
                     class="dropdown-item text-white"
-                    href="/groupage-solutions-sp.html"
+                    href="./groupage-solutions-sp.html"
                   >
-                    Soluciones de Grupaje</a
+                    Transport en groupage</a
                   >
                   <a
                     class="dropdown-item text-white"
-                    href="/transporte-excepcional.html"
+                    href="./transporte-excepcional.html"
                   >
-                    Transporte excepcional</a
+                    Transport Exceptionnel</a
                   >
                 </div>
               </li>
@@ -119,41 +119,20 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Logística</a
+                  >Logistique</a
                 >
                 <div class="dropdown-menu bg-red">
                   <a
                     class="dropdown-item text-white"
-                    href="/soluciones-logisticas.html"
+                    href="./soluciones-logisticas.html"
                   >
-                    Soluciones logisticas
+                    Solutions logistiques
                   </a>
                   <a
                     class="dropdown-item text-white"
-                    href="/plataforma-logistica.html"
+                    href="./plataforma-logistica.html"
                   >
-                    Centros logisticos</a
-                  >
-                </div>
-              </li>
-              <li class="nav-item active-link dropdown-toggle dropdown-center">
-                <a
-                  href="#"
-                  class=""
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Carreras</a
-                >
-                <div class="dropdown-menu bg-red">
-                  <a class="dropdown-item text-white" href="/carreras.html">
-                    Únete a SJL
-                  </a>
-                  <a
-                    class="dropdown-item text-white"
-                    href="/ofertas-trabajo.html"
-                  >
-                    NUESTRAS OFERTAS DE TRABAJO</a
+                    Centres logistiques</a
                   >
                 </div>
               </li>
@@ -164,20 +143,41 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >sala de noticias</a
+                  >Carrières</a
                 >
                 <div class="dropdown-menu bg-red">
-                  <a class="dropdown-item text-white" href="/noticias.html">
-                    Noticias
+                  <a class="dropdown-item text-white" href="./carreras.html">
+                    Rejoindre SJL
                   </a>
-                  <a class="dropdown-item text-white" href="/recursos.html">
-                    Recursos</a
+                  <a
+                    class="dropdown-item text-white"
+                    href="./ofertas-trabajo.html"
+                  >
+                    Nos offres d’emploi</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown-toggle dropdown-center active-link">
+                <a
+                  href="#"
+                  class=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >News room</a
+                >
+                <div class="dropdown-menu bg-red">
+                  <a class="dropdown-item text-white" href="./noticias.html">
+                    Actualites
+                  </a>
+                  <a class="dropdown-item text-white" href="./recursos.html">
+                    Ressources</a
                   >
                   <a
                     class="dropdown-item text-white"
-                    href="/espacio-cliente.html"
+                    href="./espacio-cliente.html"
                   >
-                    Espacio Clienté</a
+                    Espace Client</a
                   >
                 </div>
               </li>
@@ -185,44 +185,40 @@
             <div class="d-flex gap-3 mt-4 svg-filter-green">
               <a href="#">
                 <img
-                  src="./assets/instagram.svg"
+                  src="../assets/instagram.svg"
                   alt="instagram"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/facebook.svg"
+                  src="../assets/facebook.svg"
                   alt="facebbok"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/linkedin-svgrepo-com.svg"
+                  src="../assets/linkedin-svgrepo-com.svg"
                   alt="tiktok"
                   style="height: 32px"
                 />
               </a>
             </div>
             <div class="d-flex gap-4">
-              <a href="/fr">
+              <a href="/en/">
                 <img
-                  src="./assets/france.svg"
+                  src="../assets/united-kingdom-uk.svg"
                   alt="france"
                   style="height: 40px"
                 />
               </a>
-              <a href="/en">
-                <img
-                  src="./assets/united-kingdom-uk.svg"
-                  alt="uk"
-                  style="height: 40px"
-                />
+              <a href="/">
+                <img src="../assets/spain.svg" alt="uk" style="height: 40px" />
               </a>
             </div>
             <div class="text-center text-red">
-              <span class="fs-7">© 2023 Reservados todos los derechos</span>
+              <span class="fs-7">© 2023 Tous droits réservés</span>
             </div>
           </nav>
         </div>
@@ -233,63 +229,62 @@
             <li
               class="nav-item d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">A proposito</a>
+              <a href="#" class="dropdown-btn"> A propos</a>
               <div class="dropdown-content">
-                <a class="" href="/sobre-grupo-sjl.html"> Sobre nosotros VF </a>
-                <a class="" href="/historia.html">
-                  Historia y aspectos destacados</a
-                >
-                <a class="" href="/valores.html"> Nuestros valores</a>
-              </div>
-            </li>
-            <li
-              class="nav-item d-flex flex-column align-items-center dropdown-li"
-            >
-              <a href="#" class="dropdown-btn">A proposito</a>
-              <div class="dropdown-content">
-                <a class="" href="/transporte-ftl.html"> Transport FTL </a>
-                <a class="" href="/groupage-solutions-sp.html">
-                  Soluciones de Grupaje</a
-                >
-                <a class="" href="/transporte-excepcional.html">
-                  Transporte excepcional</a
-                >
-              </div>
-            </li>
-            <li
-              class="nav-item d-flex flex-column align-items-center dropdown-li"
-            >
-              <a href="#" class="dropdown-btn">Logística</a>
-              <div class="dropdown-content">
-                <a class="" href="/soluciones-logisticas.html">
-                  Soluciones logisticas
+                <a class="" href="./sobre-grupo-sjl.html">
+                  Sobre nosotros VF
                 </a>
-                <a class="" href="/plataforma-logistica.html">
-                  Centros logisticos</a
-                >
+                <a class="" href="./historia.html"> Histoire</a>
+                <a class="" href="./valores.html">Nos valeurs</a>
               </div>
             </li>
             <li
-              class="nav-item active-link d-flex flex-column align-items-center dropdown-li"
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">Carreras</a>
-              <span></span>
-
+              <a href="#" class="dropdown-btn">Transport</a>
               <div class="dropdown-content">
-                <a class="" href="/carreras.html"> Únete a SJL </a>
-                <a class="" href="/ofertas-trabajo.html">
-                  NUESTRAS OFERTAS DE TRABAJO</a
+                <a class="" href="./transporte-ftl.html"> Transport FTL </a>
+                <a class="" href="./groupage-solutions-sp.html">
+                  Transport en groupage</a
+                >
+                <a class="" href="./transporte-excepcional.html">
+                  Transport Exceptionnel</a
                 >
               </div>
             </li>
             <li
               class="nav-item d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">Sala de noticias</a>
+              <a href="#" class="dropdown-btn">Logistique</a>
               <div class="dropdown-content">
-                <a class="" href="/noticias.html"> Noticias </a>
-                <a class="" href="/recursos.html"> Recursos</a>
-                <a class="" href="#"> Espacio Clienté</a>
+                <a class="" href="./soluciones-logisticas.html">
+                  Solutions logistiques
+                </a>
+                <a class="" href="./plataforma-logistica.html">
+                  Centres logistiques</a
+                >
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn"> Carrières</a>
+              <div class="dropdown-content">
+                <a class="" href="./carreras.html"> Rejoindre SJL </a>
+                <a class="" href="./ofertas-trabajo.html">
+                  Nos offres d’emploi</a
+                >
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column active-link align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">News room</a>
+              <span></span>
+              <div class="dropdown-content">
+                <a class="" href="./noticias.html"> Actualites </a>
+                <a class="" href="./recursos.html"> Ressources</a>
+                <a class="" href="./espacio-cliente.html"> Espace Client</a>
               </div>
             </li>
           </ul>
@@ -298,16 +293,16 @@
           class="d-lg-flex d-none gap-1 gap-xl-2 gap-xxl-5 align-items-center"
         >
           <div class="d-flex gap-2">
-            <a href="/fr">
+            <a href="/">
               <img
-                src="./assets/france.svg"
+                src="../assets/spain.svg"
                 alt="france"
                 style="height: 30px"
               />
             </a>
             <a href="/en">
               <img
-                src="./assets/united-kingdom-uk.svg"
+                src="../assets/united-kingdom-uk.svg"
                 alt="spain"
                 style="height: 30px"
               />
@@ -316,21 +311,21 @@
           <div class="d-flex gap-2 svg-filter-green">
             <a href="#">
               <img
-                src="./assets/instagram.svg"
+                src="../assets/instagram.svg"
                 alt="instagram"
                 style="height: 24px"
               />
             </a>
             <a href="#">
               <img
-                src="./assets/facebook.svg"
+                src="../assets/facebook.svg"
                 alt="facebbok"
                 style="height: 24px"
               />
             </a>
             <a href="#">
               <img
-                src="./assets/linkedin-svgrepo-com.svg"
+                src="../assets/linkedin-svgrepo-com.svg"
                 alt="tiktok"
                 style="height: 24px"
               />
@@ -357,28 +352,28 @@
             class="d-flex flex-lg-column flex-row justify-content-center align-items-center gap-5 align-items-lg-start"
           >
             <img
-              src="./assets/logo.svg"
+              src="../assets/logo.svg"
               alt="logo"
               class="svg-size-2 svg-filter-white"
             />
             <div class="d-flex gap-3 mt-lg-5 py-lg-3 svg-filter-white">
               <a href="#">
                 <img
-                  src="./assets/instagram.svg"
+                  src="../assets/instagram.svg"
                   alt="instagram"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/facebook.svg"
+                  src="../assets/facebook.svg"
                   alt="facebbok"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/linkedin-svgrepo-com.svg"
+                  src="../assets/linkedin-svgrepo-com.svg"
                   alt="tiktok"
                   style="height: 32px"
                 />
@@ -395,40 +390,40 @@
                 <ul
                   class="py-2 nav nav-pills flex-column text-white fw-semibold"
                 >
-                  <li class="mb-2 fw-bolder fs-5">Enlaces Útiles</li>
+                  <li class="mb-2 fw-bolder fs-5">Liens utiles</li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/sobre-grupo-sjl.html"
+                      href="./sobre-grupo-sjl.html"
                       class="fw-lighter hover-opacity"
                       >sobre nosotros</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/transporte-excepcional.html"
+                      href="./transporte-excepcional.html"
                       class="fw-lighter hover-opacity"
-                      >Transporte excepcional</a
+                      >Transport Exceptionnel</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/transporte-ftl.html"
+                      href="./transporte-ftl.html"
                       class="fw-lighter hover-opacity"
                       >Transport FTL</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/groupage-solutions-sp.html"
+                      href="./groupage-solutions-sp.html"
                       class="fw-lighter hover-opacity"
-                      >Soluciones de Grupaje</a
+                      >Transport en groupage</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/plataforma-logistica.html"
+                      href="./plataforma-logistica.html"
                       class="fw-lighter hover-opacity"
-                      >Centros logisticos</a
+                      >Centres logistiques</a
                     >
                   </li>
                 </ul>
@@ -437,35 +432,37 @@
                 >
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/soluciones-logisticas.html"
+                      href="./soluciones-logisticas.html"
                       class="fw-lighter hover-opacity"
-                      >Soluciones logisticas</a
+                      >Solutions logistiques</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/carreras.html" class="fw-lighter hover-opacity"
-                      >Carreras</a
+                    <a href="./carreras.html" class="fw-lighter hover-opacity"
+                      >Carrières</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/ofertas-trabajo.html"
+                      href="./ofertas-trabajo.html"
                       class="fw-lighter hover-opacity"
-                      >NUESTRAS OFERTAS DE TRABAJO</a
+                      >Nos offres d’emploi</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/noticias.html" class="fw-lighter hover-opacity"
-                      >Noticias</a
+                    <a href="./noticias.html" class="fw-lighter hover-opacity"
+                      >Actualites</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/recursos.html" class="fw-lighter hover-opacity"
-                      >Recursos</a
+                    <a href="./recursos.html" class="fw-lighter hover-opacity"
+                      >Ressources</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/conductores.html" class="fw-lighter hover-opacity"
+                    <a
+                      href="./conductores.html"
+                      class="fw-lighter hover-opacity"
                       >Conductores</a
                     >
                   </li>
@@ -473,31 +470,31 @@
               </div>
 
               <ul class="py-2 nav nav-pills flex-column text-white fw-semibold">
-                <li class="mb-2 fw-bolder fs-5">A proposito</li>
+                <li class="mb-2 fw-bolder fs-5">A propos</li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/politica-de-gestion-de-cookies.html"
+                    href="./politica-de-gestion-de-cookies.html"
                     class="fw-lighter hover-opacity"
-                    >Política de gestión de cookies</a
+                    >Politique de gestion des cookies</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/informacion-legal-2.html"
+                    href="./informacion-legal-2.html"
                     class="fw-lighter hover-opacity"
-                    >Información legal</a
+                    >Mentions légales</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/politica-de-privacidad-2.html"
+                    href="./politica-de-privacidad-2.html"
                     class="fw-lighter hover-opacity"
-                    >Política de privacidad</a
+                    >Privacy Policy</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
-                  <a href="/contactenos.html" class="fw-lighter hover-opacity"
-                    >Contáctenos</a
+                  <a href="./contactenos.html" class="fw-lighter hover-opacity"
+                    >Contactez-nous</a
                   >
                 </li>
               </ul>
@@ -527,7 +524,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" type="module"></script>
+    <script src="../script.js" type="module"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="

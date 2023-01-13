@@ -24,11 +24,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./style/swiper.css" />
-    <link rel="stylesheet" href="./style/responsive.css" />
-
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/swiper.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
     <title>SJL</title>
   </head>
   <body>
@@ -37,11 +36,11 @@
       <div
         class="container d-flex flex-row align-items-center justify-content-between py-lg-0 py-1 px-0"
       >
-        <a href="/" class="">
-          <img src="./assets/logo.png" alt="logo" class="logo" />
+        <a href="./" class="bg-white">
+          <img src="../assets/logo.png" alt="logo" class="logo" />
         </a>
         <button class="d-flex d-lg-none" type="button" id="open-button">
-          <img src="./assets/menu.svg" alt="menu" style="height: 26px" />
+          <img src="../assets/menu.svg" alt="menu" style="height: 26px" />
         </button>
         <div class="bg-menu d-flex d-lg-none" id="menu">
           <nav
@@ -50,7 +49,7 @@
             <div class="d-flex justify-content-end w-100">
               <button type="button" id="close-button">
                 <img
-                  src="./assets/menu-close.svg"
+                  src="../assets/menu-close.svg"
                   alt="close-menu"
                   style="height: 26px"
                 />
@@ -59,30 +58,6 @@
             <ul
               class="nav d-flex flex-column text-center gap-4 mt-4 fs-5 fw-bold"
             >
-              <li class="nav-item dropdown-toggle dropdown-center">
-                <a
-                  href="#"
-                  class=""
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >A proposito</a
-                >
-                <div class="dropdown-menu bg-red">
-                  <a
-                    class="dropdown-item text-white"
-                    href="/sobre-grupo-sjl.html"
-                  >
-                    Sobre nosotros VF
-                  </a>
-                  <a class="dropdown-item text-white" href="/historia.html">
-                    Historia y aspectos destacados</a
-                  >
-                  <a class="dropdown-item text-white" href="/valores.html">
-                    Nuestros valores</a
-                  >
-                </div>
-              </li>
               <li class="nav-item active-link dropdown-toggle dropdown-center">
                 <a
                   href="#"
@@ -90,26 +65,50 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Transportación</a
+                  >About us</a
                 >
                 <div class="dropdown-menu bg-red">
                   <a
                     class="dropdown-item text-white"
-                    href="/transporte-ftl.html"
+                    href="./sobre-grupo-sjl.html"
+                  >
+                    Sobre nosotros VF
+                  </a>
+                  <a class="dropdown-item text-white" href="./historia.html">
+                    History and highlights</a
+                  >
+                  <a class="dropdown-item text-white" href="./valores.html">
+                    Our values</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown-toggle dropdown-center">
+                <a
+                  href="#"
+                  class=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Transport</a
+                >
+                <div class="dropdown-menu bg-red">
+                  <a
+                    class="dropdown-item text-white"
+                    href="./transporte-ftl.html"
                   >
                     Transport FTL
                   </a>
                   <a
                     class="dropdown-item text-white"
-                    href="/groupage-solutions-sp.html"
+                    href="./groupage-solutions-sp.html"
                   >
-                    Soluciones de Grupaje</a
+                    Groupage Solutions</a
                   >
                   <a
                     class="dropdown-item text-white"
-                    href="/transporte-excepcional.html"
+                    href="./transporte-excepcional.html"
                   >
-                    Transporte excepcional</a
+                    Exceptional transport</a
                   >
                 </div>
               </li>
@@ -120,20 +119,20 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Logística</a
+                  >Logistics</a
                 >
                 <div class="dropdown-menu bg-red">
                   <a
                     class="dropdown-item text-white"
-                    href="/soluciones-logisticas.html"
+                    href="./soluciones-logisticas.html"
                   >
-                    Soluciones logisticas
+                    Our logistics solutions
                   </a>
                   <a
                     class="dropdown-item text-white"
-                    href="/plataforma-logistica.html"
+                    href="./plataforma-logistica.html"
                   >
-                    Centros logisticos</a
+                    Logistics centers</a
                   >
                 </div>
               </li>
@@ -144,15 +143,15 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >Carreras</a
+                  >Careers</a
                 >
                 <div class="dropdown-menu bg-red">
-                  <a class="dropdown-item text-white" href="/carreras.html">
-                    Únete a SJL
+                  <a class="dropdown-item text-white" href="./carreras.html">
+                    Careers
                   </a>
                   <a
                     class="dropdown-item text-white"
-                    href="/ofertas-trabajo.html"
+                    href="./ofertas-trabajo.html"
                   >
                     NUESTRAS OFERTAS DE TRABAJO</a
                   >
@@ -165,20 +164,20 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
-                  >sala de noticias</a
+                  >Newsroom</a
                 >
                 <div class="dropdown-menu bg-red">
-                  <a class="dropdown-item text-white" href="/noticias.html">
-                    Noticias
+                  <a class="dropdown-item text-white" href="./noticias.html">
+                    News
                   </a>
-                  <a class="dropdown-item text-white" href="/recursos.html">
-                    Recursos</a
+                  <a class="dropdown-item text-white" href="./recursos.html">
+                    Our resources</a
                   >
                   <a
                     class="dropdown-item text-white"
-                    href="/espacio-cliente.html"
+                    href="./espacio-cliente.html"
                   >
-                    Espacio Clienté</a
+                    Customer Area</a
                   >
                 </div>
               </li>
@@ -186,44 +185,40 @@
             <div class="d-flex gap-3 mt-4 svg-filter-green">
               <a href="#">
                 <img
-                  src="./assets/instagram.svg"
+                  src="../assets/instagram.svg"
                   alt="instagram"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/facebook.svg"
+                  src="../assets/facebook.svg"
                   alt="facebbok"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/linkedin-svgrepo-com.svg"
+                  src="../assets/linkedin-svgrepo-com.svg"
                   alt="tiktok"
                   style="height: 32px"
                 />
               </a>
             </div>
             <div class="d-flex gap-4">
-              <a href="/fr">
+              <a href="/fr/">
                 <img
-                  src="./assets/france.svg"
+                  src="../assets/france.svg"
                   alt="france"
                   style="height: 40px"
                 />
               </a>
-              <a href="/en">
-                <img
-                  src="./assets/united-kingdom-uk.svg"
-                  alt="uk"
-                  style="height: 40px"
-                />
+              <a href="/">
+                <img src="../assets/spain.svg" alt="uk" style="height: 40px" />
               </a>
             </div>
             <div class="text-center text-red">
-              <span class="fs-7">© 2023 Reservados todos los derechos</span>
+              <span class="fs-7">© 2023 All rights reserved</span>
             </div>
           </nav>
         </div>
@@ -232,53 +227,52 @@
         >
           <ul class="nav nav-pills gap-1 gap-lg-1 gap-xl-3 gap-xxl-5">
             <li
-              class="nav-item d-flex flex-column align-items-center dropdown-li"
-            >
-              <a href="#" class="dropdown-btn">A proposito</a>
-
-              <div class="dropdown-content">
-                <a class="" href="/sobre-grupo-sjl.html"> Sobre nosotros VF </a>
-                <a class="" href="/historia.html">
-                  Historia y aspectos destacados</a
-                >
-                <a class="" href="/valores.html"> Nuestros valores</a>
-              </div>
-            </li>
-            <li
               class="nav-item active-link d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">Transporte</a>
+              <a href="#" class="dropdown-btn"> About us</a>
               <span></span>
               <div class="dropdown-content">
-                <a class="" href="/transporte-ftl.html"> Transport FTL </a>
-                <a class="" href="/groupage-solutions-sp.html">
-                  Soluciones de Grupaje</a
-                >
-                <a class="" href="/transporte-excepcional.html">
-                  Transporte excepcional</a
-                >
-              </div>
-            </li>
-            <li
-              class="nav-item d-flex flex-column align-items-center dropdown-li"
-            >
-              <a href="#" class="dropdown-btn">Logística</a>
-              <div class="dropdown-content">
-                <a class="" href="/soluciones-logisticas.html">
-                  Soluciones logisticas
+                <a class="" href="./sobre-grupo-sjl.html">
+                  Sobre nosotros VF
                 </a>
-                <a class="" href="/plataforma-logistica.html">
-                  Centros logisticos</a
+                <a class="" href="./historia.html"> History and highlights</a>
+                <a class="" href="./valores.html">Our values</a>
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn">Transport</a>
+              <div class="dropdown-content">
+                <a class="" href="./transporte-ftl.html"> Transport FTL </a>
+                <a class="" href="./groupage-solutions-sp.html">
+                  Groupage Solutions</a
+                >
+                <a class="" href="./transporte-excepcional.html">
+                  Exceptional transport</a
                 >
               </div>
             </li>
             <li
               class="nav-item d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">Carreras</a>
+              <a href="#" class="dropdown-btn">Logistics</a>
               <div class="dropdown-content">
-                <a class="" href="/carreras.html"> Únete a SJL </a>
-                <a class="" href="/ofertas-trabajo.html">
+                <a class="" href="./soluciones-logisticas.html">
+                  Our logistics solutions
+                </a>
+                <a class="" href="./plataforma-logistica.html">
+                  Logistics centers</a
+                >
+              </div>
+            </li>
+            <li
+              class="nav-item d-flex flex-column align-items-center dropdown-li"
+            >
+              <a href="#" class="dropdown-btn"> Careers</a>
+              <div class="dropdown-content">
+                <a class="" href="./carreras.html"> Careers </a>
+                <a class="" href="./ofertas-trabajo.html">
                   NUESTRAS OFERTAS DE TRABAJO</a
                 >
               </div>
@@ -286,11 +280,11 @@
             <li
               class="nav-item d-flex flex-column align-items-center dropdown-li"
             >
-              <a href="#" class="dropdown-btn">Sala de noticias</a>
+              <a href="#" class="dropdown-btn">Newsroom</a>
               <div class="dropdown-content">
-                <a class="" href="/noticias.html"> Noticias </a>
-                <a class="" href="/recursos.html"> Recursos</a>
-                <a class="" href="#"> Espacio Clienté</a>
+                <a class="" href="./noticias.html"> News </a>
+                <a class="" href="./recursos.html"> Our resources</a>
+                <a class="" href="./espacio-cliente.html"> Customer Area</a>
               </div>
             </li>
           </ul>
@@ -299,16 +293,16 @@
           class="d-lg-flex d-none gap-1 gap-xl-2 gap-xxl-5 align-items-center"
         >
           <div class="d-flex gap-2">
-            <a href="/fr">
+            <a href="/">
               <img
-                src="./assets/france.svg"
+                src="../assets/spain.svg"
                 alt="france"
                 style="height: 30px"
               />
             </a>
-            <a href="/en">
+            <a href="/fr">
               <img
-                src="./assets/united-kingdom-uk.svg"
+                src="../assets/france.svg"
                 alt="spain"
                 style="height: 30px"
               />
@@ -317,21 +311,21 @@
           <div class="d-flex gap-2 svg-filter-green">
             <a href="#">
               <img
-                src="./assets/instagram.svg"
+                src="../assets/instagram.svg"
                 alt="instagram"
                 style="height: 24px"
               />
             </a>
             <a href="#">
               <img
-                src="./assets/facebook.svg"
+                src="../assets/facebook.svg"
                 alt="facebbok"
                 style="height: 24px"
               />
             </a>
             <a href="#">
               <img
-                src="./assets/linkedin-svgrepo-com.svg"
+                src="../assets/linkedin-svgrepo-com.svg"
                 alt="tiktok"
                 style="height: 24px"
               />
@@ -344,14 +338,14 @@
     <main>
       <div class="container mb-lg-5 mt-4 page-title">
         <div class="d-flex flex-row gap-1 text-uppercase">
-          <h1 class="fs-1 fw-bolder w-100">Transporte FTL</h1>
+          <h1 class="fs-1 fw-bolder w-100">sobre nosotros</h1>
         </div>
       </div>
       <section class="mb-lg-5 mt-5 mb-2 pt-5 position-relative">
         <div class="h-fixed-300">
           <div class="container d-flex flex-row-reverse flex-lg-column-reverse">
             <img
-              src="./assets/1907-SJL-Oiartzun_034-scaled-1.jpg"
+              src="../assets/road.gif"
               alt="image"
               class="bg-center border-20 h-lg-100 h-25 right-image-position"
             />
@@ -367,80 +361,48 @@
                 <h1
                   class="text-green fs-2 fw-bolder w-100 mt-3 mt-lg-0 text-uppercase"
                 >
-                  Soluciones de transporte FTL optimizadas y fiables
+                  Grupo SJL
                 </h1>
               </div>
               <div class="opacity-75 fs-8 mt-1 mt-lg-0">
                 <p class="w-100">
-                  Diseñadas para satisfacer sus necesidades, respetando sus
-                  exigencias y limitaciones, nuestras soluciones FTL garantizan
-                  el transporte de sus mercancías en cualquier lugar entre
-                  Marruecos y Europa en las mejores condiciones y en el menor
-                  tiempo posible.
+                  El Grupo SJL, líder y actor clave en el sector del transporte
+                  y la logística entre Europa y África, contribuye al desarrollo
+                  del comercio internacional entre las dos orillas del
+                  Mediterráneo. En un mundo más globalizado, participar en el
+                  desarrollo de los intercambios económicos de forma más
+                  equilibrada, responsable y sostenible es nuestra principal
+                  vocación
                 </p>
-                <p class="w-100">
-                  Le ofrecemos soluciones globales y personalizadas que
-                  garantizan un perfecto control de sus mercados.
-                </p>
-              </div>
-              <div>
-                <a href="#" class="btn btn-primary">Obtener un presupuesto </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="bg-trasporte-ftl">
+      <section class="container">
         <div
-          class="row row-cols-lg-3 text-white justify-content-lg-center my-4 gap-lg-5 gap-1 numbers"
+          class="bg-red py-lg-4 py-3 px-3 px-lg-5 border-20 text-white d-flex align-items-center justify-content-center flex-lg-row flex-column"
         >
-          <div
-            class="col text-center mt-lg-4 hover-shadow py-lg-4 w-lg-25 w-100"
-          >
+          <div class="d-flex flex-column align-items-center gap-3 text-center">
             <img
-              src="./assets/time-svgrepo-com.svg"
+              src="../assets/world-svgrepo-com.svg"
               alt="image"
-              class="svg-filter-white mb-lg-4 svg-size-2"
+              class="svg-filter-white"
+              style="width: 200px; height: 80px"
             />
-            <div class="">
-              <div class="d-flex justify-content-center">
-                <h3 class="numbers-size fw-bolder">+</h3>
-                <h3 class="numbers-size fw-bolder mb-lg-2 value">73</h3>
-              </div>
-              <p class="fs-5">Años de experiencia</p>
-            </div>
-          </div>
-          <div
-            class="col text-center mt-lg-4 hover-shadow py-lg-4 w-lg-25 w-100"
-          >
-            <img
-              src="./assets/truck-svgrepo-com.svg"
-              alt="image"
-              class="svg-filter-white mb-lg-4 svg-size-2"
-            />
-            <div class="">
-              <div class="d-flex justify-content-center">
-                <h3 class="numbers-size fw-bolder">+</h3>
-                <h3 class="numbers-size fw-bolder mb-lg-2 value">800</h3>
-              </div>
-              <p class="fs-5">Semirremolques</p>
-            </div>
-          </div>
-          <div
-            class="col text-center mt-lg-4 hover-shadow py-lg-4 w-lg-25 w-100"
-          >
-            <img
-              src="./assets/truck-thin-svgrepo-com.svg"
-              alt="image"
-              class="svg-filter-white mb-lg-4 svg-size-2"
-            />
-            <div class="">
-              <div class="d-flex justify-content-center">
-                <h3 class="numbers-size fw-bolder">+</h3>
-                <h3 class="numbers-size fw-bolder mb-lg-2 value">450</h3>
-              </div>
-              <p class="fs-5">Camiones</p>
-            </div>
+            <h1 class="fw-bolder fs-2 text-uppercase">Nuestra misión:</h1>
+            <p class="fs-8 w-100">
+              Ayudar a nuestros clientes a transportar sus mercancías, a
+              resolver sus retos logísticos y a mover su carga de forma segura,
+              fiable y eficiente entre Europa y África es nuestra principal
+              misión.
+            </p>
+            <p class="fs-8 w-100">
+              El diseño de soluciones inteligentes e innovadoras en línea con
+              los nuevos retos de sus mercados, la evolución de sus necesidades
+              y el crecimiento de su negocio, es una experiencia que hemos
+              estado cultivando durante 73 años en SJL.
+            </p>
           </div>
         </div>
       </section>
@@ -448,7 +410,7 @@
         <div class="my-lg-5 pt-5 pt-lg-0 h-fixed-300">
           <div class="container d-flex flex-row-reverse">
             <img
-              src="./assets/1906-SJL-Algeciras_026-1-scaled.jpg"
+              src="../assets/1907-SJL-Oiartzun_180-scaled.jpg"
               alt="image"
               class="bg-center border-20 h-lg-100 h-25 left-image-position"
             />
@@ -464,176 +426,104 @@
                 <h1
                   class="fw-bolder fs-3 text-uppercase text-green mt-4 mt-lg-0"
                 >
-                  Nuestros recursos están a su disposición
+                  Experiencia reconocida y conocimientos técnicos
+                  internacionales
                 </h1>
               </div>
               <div class="opacity-75 fs-8">
                 <p>
-                  Con más de 450 camiones y 800 remolques, ponemos a su
-                  disposición una flota moderna, con tecnología a bordo, para
-                  seguir y localizar sus envíos allí donde estén. Gracias a
-                  nuestras capacidades, garantizamos la optimización de sus
-                  flujos y la continuidad de sus operaciones. Nuestro objetivo:
-                  garantizar la entrega óptima de sus mercancías, el suministro
-                  de sus plantas de producción y sus centros de distribución.
+                  Con más de 73 años de experiencia uniendo los mercados de
+                  Europa y África, SJL se ha convertido en un actor clave en el
+                  sector del transporte de mercancías y la logística. Nuestro
+                  innegable saber hacer y nuestra reconocida experiencia nos
+                  convierten en un socio ideal para el crecimiento.
+                </p>
+                <p>
+                  A lo largo de los años, hemos desarrollado soluciones eficaces
+                  para muchos de nuestros clientes, permitiéndoles optimizar sus
+                  costes, su eficacia y, sobre todo, su competitividad.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="mb-lg-5 mt-5 pt-5 position-relative">
-        <div class="h-fixed-300">
-          <div class="container d-flex flex-row-reverse flex-lg-column-reverse">
+      <section class="container position-relative mt-3">
+        <div
+          class="d-flex h-fixed-300 align-items-center flex-column-reverse flex-lg-row"
+        >
+          <div
+            class="d-flex bg-white flex-column py-lg-4 py-3 px-1 px-lg-5 gap-lg-3 gap-3 absolute w-lg-50 rounded-right"
+          >
+            <div class="d-flex flex-row align-items-center gap-4 mt-2 mt-lg-0">
+              <div
+                class="swiper-info-line bg-green mb-2 d-none d-lg-block"
+              ></div>
+              <h1 class="fw-bolder fs-3 text-uppercase text-green">
+                Soluciones más competitivas y sostenibles para la cadena de
+                suministro
+              </h1>
+            </div>
+            <p class="fs-8 w-100">
+              Con los trastornos económicos y sociales a los que se enfrentan
+              las principales industrias, y con un entorno cambiante que
+              requiere flexibilidad y adaptabilidad, la optimización de la
+              cadena de suministro es una importante palanca competitiva. En
+              SJL, nuestro objetivo es ayudarle a anticiparse a la evolución de
+              sus mercados mediante soluciones de transporte, logística y
+              tránsito más innovadoras y responsables con el medio ambiente. Las
+              cuestiones medioambientales forman parte de nuestras
+              preocupaciones y trabajamos cada día para aportar soluciones
+              acordes con nuestros valores y las exigencias ecológicas actuales.
+            </p>
+          </div>
+          <img
+            src="../assets/marcin-jozwiak-8tKZFUjC99c-unsplash-scaled.jpg"
+            alt="marcin-jozwiak-8tKZFUjC99c-unsplash-scaled"
+            class="bg-center border-20 h-600-resopnsive"
+          />
+        </div>
+      </section>
+      <section class="mb-5 mt-2 my-lg-5 pt-5 position-relative">
+        <div class="pt-5 h-fixed-300">
+          <div class="container d-flex flex-row-reverse">
             <img
-              src="./assets/service-hover.jpg"
+              src="../assets/1906-SJL-Tanger-ALM_012-scaled.jpg"
               alt="image"
-              class="bg-center border-20 h-lg-100 h-25 right-image-position"
+              class="left-image-position bg-center border-20 h-lg-100 h-25"
             />
             <div
-              class="w-lg-50 mt-5 py-5 py-lg-5 mt-lg-0 d-flex flex-column justify-content-center pe-lg-3 gap-lg-5 gap-4"
+              class="w-lg-50 mt-5 pt-3 py-lg-5 mt-lg-0 d-flex flex-column justify-content-center ps-lg-5 gap-lg-5 gap-4"
             >
               <div
-                class="d-flex flex-row align-items-center gap-4 pt-5 pt-lg-0 mt-5 mt-lg-0"
+                class="d-flex flex-row align-items-center gap-4 mt-5 mt-lg-0"
               >
                 <div
                   class="swiper-info-line bg-green mb-2 d-none d-lg-block"
                 ></div>
-                <h1 class="text-green fs-3 fw-bolder w-100 mt-3 mt-lg-0">
-                  Nuestros recursos están a su disposición
+                <h1 class="text-green fs-3 fw-bolder w-100 mt-5 mt-lg-0">
+                  La nueva gobernanza, un acelerador del crecimiento
                 </h1>
               </div>
-              <div class="d-flex flex-row align-items-center gap-4">
-                <div
-                  class="swiper-info-line bg-green mb-2 d-none d-lg-block"
-                ></div>
-                <h1 class="text-green fs-3 fw-bolder w-100">
-                  Nuestra red integrada, en Europa y en Marruecos
-                </h1>
-              </div>
-              <div class="opacity-75 fs-8 mt-1 mt-lg-0">
+              <div class="opacity-75 fs-8">
                 <p class="w-100">
-                  Nuestra experiencia de más de 73 años, uniendo los mercados
-                  europeo y marroquí, nos ha permitido desarrollar varias líneas
-                  que sirven a países europeos como España, Francia, Portugal,
-                  Bélgica, Alemania, Países Bajos, Inglaterra, Suiza… En todas
-                  partes, nuestros equipos se comprometen a garantizar sus
-                  operaciones de transporte FTL (carga completa) cumpliendo con
-                  los mejores plazos de entrega.
+                  La gobernanza de SJL es uno de los principales activos de su
+                  éxito. El grupo se ha construido en torno a fuertes valores
+                  que aseguran su cohesión y garantizan su futuro y crecimiento.
+                </p>
+                <p class="w-100">
+                  La dinámica de transformación iniciada por el grupo ha
+                  permitido la renovación de la dirección general, compuesta en
+                  su totalidad por expertos procedentes de grandes grupos con
+                  experiencia internacional, que se comprometen a promover y
+                  aplicar las mejores prácticas de gobernanza y ética. En un
+                  proceso constante de progreso, la dirección del grupo SJL
+                  determina las orientaciones estratégicas totalmente en
+                  consonancia con los retos actuales y futuros de nuestros
+                  clientes, al tiempo que garantiza la potenciación del
+                  rendimiento de nuestros servicios.
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mt-lg-5 mb-lg-5 py-3 position-relative">
-        <div class="my-lg-5">
-          <div
-            class="container d-flex flex-lg-row flex-column align-items-center gap-lg-5"
-          >
-            <img
-              src="./assets/1907-SJL-Oiartzun_041-2-scaled.jpg"
-              alt="image"
-              class="bg-center border-20 w-lg-25 w-100"
-              style="height: 360px"
-            />
-            <div
-              class="w-lg-75 d-flex flex-column flex-lg-row mt-3 mt-lg-0 shadow-lg border-20 px-lg-3 py-lg-5 gap-lg-5"
-            >
-              <div
-                class="d-flex flex-column justify-content-center ps-3 gap-lg-5 gap-4 w-lg-75 w-100"
-              >
-                <div
-                  class="d-flex flex-row align-items-center gap-4 mt-5 mt-lg-0"
-                >
-                  <div
-                    class="swiper-info-line bg-green mb-2 d-none d-lg-block"
-                  ></div>
-                  <h1 class="fw-bolder text-green fs-2 text-uppercase">
-                    Servicios de calidad y personalizados
-                  </h1>
-                </div>
-                <div class="opacity-75 fs-8">
-                  <p>
-                    Sean cuales sean sus retos, le ofrecemos servicios
-                    totalmente personalizados y ampliables para satisfacer sus
-                    necesidades presentes y futuras. Nuestros equipos
-                    comerciales y operativos están a su disposición para
-                    desplegar los medios necesarios para resolver sus problemas
-                    y ofrecerle las mejores soluciones adaptadas a sus
-                    necesidades de coste, fiabilidad y rapidez.
-                  </p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <ul class="timeline-small fs-8">
-                  <li>
-                    <p>Rapidez y flexibilidad</p>
-                  </li>
-                  <li>
-                    <p>Doble tripulación</p>
-                  </li>
-                  <li>
-                    <p>Camión doble</p>
-                  </li>
-                  <li>
-                    <p>Tiempo de tránsito optimizado</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="container mb-5">
-        <div class="d-flex gap-3 flex-column flex-lg-row">
-          <div
-            class="w-lg-50 d-flex flex-column border-20 bg-red justify-content-center py-5 px-4 gap-lg-5 gap-4 text-white"
-          >
-            <div class="mt-3">
-              <h1 class="fw-bolder fs-2 text-uppercase">
-                Herramientas de última generación
-              </h1>
-            </div>
-            <div class="fs-8">
-              <p>
-                Desplegamos sistemas de información de última generación que le
-                permiten supervisar sus operaciones a lo largo de su ejecución.
-              </p>
-              <p>
-                Desplegamos sistemas de información de última generación que le
-                permiten supervisar sus operaciones a lo largo de su ejecución.
-              </p>
-            </div>
-          </div>
-          <div
-            class="w-lg-50 d-flex flex-column border-20 bg-red justify-content-center py-5 px-4 gap-lg-5 gap-4 text-white"
-          >
-            <div class="mt-3">
-              <h1 class="fw-bolder fs-2 text-uppercase">
-                Nuestras soluciones FTL le proporcionan
-              </h1>
-            </div>
-            <div class="fs-8">
-              <ul>
-                <li>
-                  Las redes de carreteras integradas más extensas de Europa
-                  Occidental, Europa Oriental y África del Norte.
-                </li>
-                <li>
-                  Una flota de más de 800 remolques (Mega lona, Mega chapa y
-                  refrigerados).Gestión óptima y racionalizada de los flujos de
-                  entrada y salida.
-                </li>
-                <li>
-                  Gestión óptima y racionalizada de los flujos de entrada y
-                  salida.
-                </li>
-                <li>
-                  Seguimiento del rendimiento de sus operaciones con un equipo
-                  de atención al cliente a su disposición.
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -649,28 +539,28 @@
             class="d-flex flex-lg-column flex-row justify-content-center align-items-center gap-5 align-items-lg-start"
           >
             <img
-              src="./assets/logo.svg"
+              src="../assets/logo.svg"
               alt="logo"
               class="svg-size-2 svg-filter-white"
             />
             <div class="d-flex gap-3 mt-lg-5 py-lg-3 svg-filter-white">
               <a href="#">
                 <img
-                  src="./assets/instagram.svg"
+                  src="../assets/instagram.svg"
                   alt="instagram"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/facebook.svg"
+                  src="../assets/facebook.svg"
                   alt="facebbok"
                   style="height: 32px"
                 />
               </a>
               <a href="#">
                 <img
-                  src="./assets/linkedin-svgrepo-com.svg"
+                  src="../assets/linkedin-svgrepo-com.svg"
                   alt="tiktok"
                   style="height: 32px"
                 />
@@ -687,40 +577,40 @@
                 <ul
                   class="py-2 nav nav-pills flex-column text-white fw-semibold"
                 >
-                  <li class="mb-2 fw-bolder fs-5">Enlaces Útiles</li>
+                  <li class="mb-2 fw-bolder fs-5">Useful Links</li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/sobre-grupo-sjl.html"
+                      href="./sobre-grupo-sjl.html"
                       class="fw-lighter hover-opacity"
                       >sobre nosotros</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/transporte-excepcional.html"
+                      href="./transporte-excepcional.html"
                       class="fw-lighter hover-opacity"
-                      >Transporte excepcional</a
+                      >Exceptional transport</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/transporte-ftl.html"
+                      href="./transporte-ftl.html"
                       class="fw-lighter hover-opacity"
                       >Transport FTL</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/groupage-solutions-sp.html"
+                      href="./groupage-solutions-sp.html"
                       class="fw-lighter hover-opacity"
-                      >Soluciones de Grupaje</a
+                      >Groupage Solutions</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/plataforma-logistica.html"
+                      href="./plataforma-logistica.html"
                       class="fw-lighter hover-opacity"
-                      >Centros logisticos</a
+                      >Logistics centers</a
                     >
                   </li>
                 </ul>
@@ -729,35 +619,37 @@
                 >
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/soluciones-logisticas.html"
+                      href="./soluciones-logisticas.html"
                       class="fw-lighter hover-opacity"
                       >Soluciones logisticas</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/carreras.html" class="fw-lighter hover-opacity"
-                      >Carreras</a
+                    <a href="./carreras.html" class="fw-lighter hover-opacity"
+                      >Careers</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
                     <a
-                      href="/ofertas-trabajo.html"
+                      href="./ofertas-trabajo.html"
                       class="fw-lighter hover-opacity"
                       >NUESTRAS OFERTAS DE TRABAJO</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/noticias.html" class="fw-lighter hover-opacity"
-                      >Noticias</a
+                    <a href="./noticias.html" class="fw-lighter hover-opacity"
+                      >News</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/recursos.html" class="fw-lighter hover-opacity"
-                      >Recursos</a
+                    <a href="./recursos.html" class="fw-lighter hover-opacity"
+                      >Our resources</a
                     >
                   </li>
                   <li class="nav-item hover-opacity">
-                    <a href="/conductores.html" class="fw-lighter hover-opacity"
+                    <a
+                      href="./conductores.html"
+                      class="fw-lighter hover-opacity"
                       >Conductores</a
                     >
                   </li>
@@ -765,31 +657,31 @@
               </div>
 
               <ul class="py-2 nav nav-pills flex-column text-white fw-semibold">
-                <li class="mb-2 fw-bolder fs-5">A proposito</li>
+                <li class="mb-2 fw-bolder fs-5">About us</li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/politica-de-gestion-de-cookies.html"
+                    href="./politica-de-gestion-de-cookies.html"
                     class="fw-lighter hover-opacity"
-                    >Política de gestión de cookies</a
+                    >Cookie management policy</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/informacion-legal-2.html"
+                    href="./informacion-legal-2.html"
                     class="fw-lighter hover-opacity"
-                    >Información legal</a
+                    >Legal information</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
                   <a
-                    href="/politica-de-privacidad-2.html"
+                    href="./politica-de-privacidad-2.html"
                     class="fw-lighter hover-opacity"
-                    >Política de privacidad</a
+                    >Privacy Policy</a
                   >
                 </li>
                 <li class="nav-item hover-opacity">
-                  <a href="/contactenos.html" class="fw-lighter hover-opacity"
-                    >Contáctenos</a
+                  <a href="./contactenos.html" class="fw-lighter hover-opacity"
+                    >Contact-us</a
                   >
                 </li>
               </ul>
@@ -819,7 +711,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" type="module"></script>
+    <script src="../script.js" type="module"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="

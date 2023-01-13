@@ -283,6 +283,9 @@
     height: 600px !important;
   }
 
+  .min-h-100 {
+    min-height: 180px !important;
+  }
 
   .right-image-position {
     position: absolute;

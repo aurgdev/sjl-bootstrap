@@ -575,3 +575,8 @@ ul.timeline-small>li:before {
   filter: invert(17%) sepia(34%) saturate(4407%) hue-rotate(327deg) brightness(91%) contrast(91%);
   mix-blend-mode: difference;
 }
+
+.form-check-input:checked {
+  background-color: #16492f;
+  border-color: #16492f;
+}
