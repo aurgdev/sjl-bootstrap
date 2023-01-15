@@ -181,7 +181,7 @@
 
   .swiper-info {
     padding: 30px 40px 6px 20%;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0;
   }
 
   .swiper-info-container {
@@ -389,7 +389,7 @@
     bottom: 0;
     left: 0;
     right: 100%;
-    top: 70%;
+    top: 80%;
   }
 
   .swiper-info-text h1 {
@@ -513,13 +513,6 @@
     border-radius: 0 15px 15px 0;
   }
 
-  .swiper-info-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    top: 80%;
-  }
 
   .swiper-info-text h1 {
     font-size: 34px;
@@ -579,13 +572,7 @@
     border-radius: 0 15px 15px 0;
   }
 
-  .swiper-info-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    top: 80%;
-  }
+
 
   .swiper-info-text h1 {
     font-size: 34px;
